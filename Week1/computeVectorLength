@@ -1,0 +1,15 @@
+function [ alpha ] = laff_norm2( x )
+    
+% Compute the length of a vector (x)
+
+% Check if x is a vector
+if ~isvector( x )
+    alpha = 'FAILED';
+    return
+end 
+
+alpha = sqrt(sum(x.^2));
+
+return
+
+end
